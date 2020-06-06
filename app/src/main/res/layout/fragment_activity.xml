@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/activity_back"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="8dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="5dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                            android:id="@+id/mbs_manufacturing_days"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Select Day"
+                            android:textColor="@color/colorPrimary"
+                            />
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="7dp"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        >
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_cust_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                app:cardCornerRadius="8dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="7dp"
+                    android:layout_marginLeft="8dp">
+
+                    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                        android:id="@+id/mbs_area"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Select Area"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/colorPrimary" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:id="@+id/select_retailer">
+                        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                            android:id="@+id/mbs_retailer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Select Retailer"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/colorPrimary" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cd_show_retailer_details"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="8dp"
+                android:visibility="gone" >
+                <!--                android:visibility="gone"-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp">
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TableRow android:layout_marginRight="5dp"
+                            android:layout_marginLeft="5dp" >
+
+                            <TextView
+                                android:layout_weight="0.8"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="Owner:"
+                                android:textSize="18dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorPrimary"
+                                android:drawableLeft="@drawable/ic_person_pink_16dp"
+                                android:drawablePadding="7dp"></TextView>
+
+                            <TextView
+                                android:id="@+id/tv_activity_username"
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:textSize="15dp"
+                                android:textColor="@color/black"
+                                ></TextView>
+                        </TableRow>
+                        <TableRow android:layout_marginTop="10dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginLeft="5dp">
+
+                            <TextView
+                                android:layout_weight="0.8"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="Grade:"
+                                android:textSize="18dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorPrimary"
+                                android:drawableLeft="@drawable/ic_grade_pink_16dp"
+                                android:drawablePadding="7dp"></TextView>
+
+                            <TextView
+                                android:id="@+id/tv_activity_usergrade"
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:textSize="15dp"
+                                android:textColor="@color/black"></TextView>
+                        </TableRow>
+                        <TableRow android:layout_marginTop="10dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginLeft="5dp">
+
+                            <TextView
+                                android:layout_weight="0.8"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="Mobile No.:"
+                                android:textSize="18dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorPrimary"
+                                android:drawableLeft="@drawable/ic_phone_pink_16dp"
+                                android:drawablePadding="7dp"></TextView>
+
+                            <TextView
+                                android:id="@+id/tv_activity_usercontact"
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:textSize="15dp"
+                                android:textColor="@color/black"></TextView>
+                        </TableRow>
+                        <TableRow android:layout_marginTop="10dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginLeft="5dp">
+
+                            <TextView
+                                android:layout_weight="0.8"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="Address:"
+                                android:textSize="18dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorPrimary"
+                                android:drawableLeft="@drawable/ic_home_pink_16dp"
+                                android:drawablePadding="7dp"></TextView>
+
+                            <TextView
+                                android:id="@+id/tv_activity_useraddress"
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:textSize="15dp"
+                                android:textColor="@color/black"></TextView>
+                        </TableRow>
+
+                   <TableRow android:layout_marginTop="20dp">
+
+
+
+                       <Button
+                           android:layout_gravity="center"
+                           android:id="@+id/create_order_btn"
+                           android:layout_width="0dp"
+                           android:layout_height="wrap_content"
+                           android:layout_weight="0.66"
+                           android:text="Create Order"
+                           android:textStyle="bold"
+                           android:textSize="16dp"
+                           android:layout_marginLeft="30dp"
+                           android:layout_marginRight="30dp"
+                           android:textColor="@color/white"
+                           android:background="@drawable/login_button_back"></Button>
+
+
+
+
+                   </TableRow>
+
+
+                    </TableLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/show_create_button"
+                android:visibility="gone">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

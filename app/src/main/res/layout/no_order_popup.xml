@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_custom_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_gravity="center">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        app:cardCornerRadius="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                >
+
+                <TextView
+                    android:id="@+id/approve_message_header"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No Order"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"
+                    android:drawableLeft="@drawable/ic_star_pink_24dp"
+                    android:textSize="22dp" />
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/approve_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="You have not any required order"
+                    android:gravity="center"
+                    android:textColor="@color/green"
+                    android:textSize="17dp" />
+       <Button
+           android:id="@+id/arrow_back_btn"
+           android:layout_marginTop="10dp"
+           android:layout_width="90dp"
+           android:layout_height="30dp"
+           android:layout_gravity="center"
+           android:layout_marginLeft="3dp"
+           android:background="@drawable/login_button_back"
+           android:drawableLeft="@drawable/ic_keyboard_arrow_left_white_32dp"
+           android:paddingLeft="30dip"
+           ></Button>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

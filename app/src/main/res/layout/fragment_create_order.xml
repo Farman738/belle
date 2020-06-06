@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cd_show_retailer_details"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:cardCornerRadius="8dp">
+        <!--                android:visibility="gone"-->
+
+<!--   <LinearLayout-->
+<!--       android:layout_width="match_parent"-->
+<!--       android:layout_height="wrap_content"-->
+<!--       android:orientation="vertical"-->
+<!--       android:layout_marginLeft="8dp"-->
+<!--       android:layout_marginBottom="10dp"-->
+<!--       android:layout_marginTop="10dp">-->
+  <TableLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+
+
+
+  <TableRow android:layout_marginRight="5dp"
+      android:layout_marginLeft="5dp" >
+
+   <TextView
+       android:layout_weight="0.8"
+       android:layout_width="0dp"
+       android:layout_height="wrap_content"
+       android:text="Owner:"
+       android:textSize="18dp"
+       android:textStyle="bold"
+       android:textColor="@color/colorPrimary"
+       android:drawableLeft="@drawable/ic_person_pink_16dp"
+       android:drawablePadding="7dp"></TextView>
+
+   <TextView
+       android:id="@+id/tv_activity_username"
+       android:layout_weight="1"
+       android:layout_width="0dp"
+       android:layout_height="wrap_content"
+       android:text=""
+       android:textSize="15dp"
+       android:textColor="@color/black"></TextView>
+     </TableRow>
+
+   <TableRow android:layout_marginTop="5dp"
+       android:layout_marginRight="5dp"
+       android:layout_marginLeft="5dp">
+
+   <TextView
+       android:layout_weight="0.8"
+       android:layout_width="0dp"
+       android:layout_height="wrap_content"
+       android:text="Grade:"
+       android:textSize="18dp"
+       android:textStyle="bold"
+       android:textColor="@color/colorPrimary"
+       android:drawableLeft="@drawable/ic_grade_pink_16dp"
+       android:drawablePadding="7dp"></TextView>
+
+    <TextView
+        android:id="@+id/tv_activity_usergrade"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="15dp"
+        android:textColor="@color/black"></TextView>
+    </TableRow>
+
+ <TableRow android:layout_marginTop="5dp"
+     android:layout_marginRight="5dp"
+     android:layout_marginLeft="5dp">
+
+  <TextView
+      android:layout_weight="0.8"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:text="Mobile No.:"
+      android:textSize="18dp"
+      android:textStyle="bold"
+      android:textColor="@color/colorPrimary"
+      android:drawableLeft="@drawable/ic_phone_pink_16dp"
+      android:drawablePadding="7dp"></TextView>
+
+   <TextView
+       android:id="@+id/tv_activity_usercontact"
+       android:layout_weight="1"
+       android:layout_width="0dp"
+       android:layout_height="wrap_content"
+       android:text=""
+       android:textSize="15dp"
+       android:textColor="@color/black"></TextView>
+  </TableRow>
+
+   <TableRow android:layout_marginTop="5dp"
+       android:layout_marginRight="5dp"
+       android:layout_marginLeft="5dp">
+
+   <TextView
+       android:layout_weight="0.8"
+       android:layout_width="0dp"
+       android:layout_height="wrap_content"
+       android:text="Address:"
+       android:textSize="18dp"
+       android:textStyle="bold"
+       android:textColor="@color/colorPrimary"
+       android:drawableLeft="@drawable/ic_home_pink_16dp"
+       android:drawablePadding="7dp"></TextView>
+
+    <TextView
+        android:id="@+id/tv_activity_useraddress"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="15dp"
+        android:textColor="@color/black"></TextView>
+  </TableRow>
+
+
+
+ <TableRow android:layout_marginTop="15dp"
+     android:layout_marginRight="5dp"
+     android:layout_marginLeft="5dp"
+     android:layout_marginBottom="10dp">
+
+   <Button
+       android:id="@+id/btn_upload_order"
+       android:layout_width="0dp"
+       android:layout_height="wrap_content"
+       android:layout_weight="0.5"
+       android:background="@drawable/login_button_back"
+       android:text="Upload Order"
+       android:textStyle="bold"
+       android:textSize="15dp"
+       android:textColor="@color/white"></Button>
+
+     <Button
+         android:id="@+id/btn_noOrder"
+         android:layout_width="0dp"
+         android:layout_height="wrap_content"
+         android:layout_weight="0.5"
+         android:background="@drawable/login_button_back"
+         android:text="No Order"
+         android:textStyle="bold"
+         android:textSize="15dp"
+         android:layout_marginLeft="8dp"
+         android:textColor="@color/white"></Button>
+
+      </TableRow>
+
+
+  </TableLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cardViewd_show_upload_order_design"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:cardCornerRadius="8dp"
+             android:visibility="gone"  >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="5dp"
+                >
+
+                <TextView android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Document Uploaded"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"></TextView>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="10dp"
+       android:orientation="vertical">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center"
+      android:orientation="vertical">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+
+   <androidx.cardview.widget.CardView
+       android:layout_width="0dp"
+       android:layout_height="wrap_content"
+       android:layout_margin="5dp"
+       android:layout_weight="1"
+       app:cardBackgroundColor="@color/white"
+       app:cardCornerRadius="4dp">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_gravity="center"
+      android:gravity="center"
+      android:orientation="horizontal"
+      android:layout_margin="5dp">
+
+     <TextView
+         android:id="@+id/tv_capture"
+         android:layout_width="0dp"
+         android:layout_height="wrap_content"
+         android:layout_weight="1"
+         android:drawableTop="@drawable/ic_photo_camera_blue_60dp"
+         android:gravity="center"
+         android:text="Capture Image"
+         android:textColor="@color/colorPrimary"
+         android:textSize="18dp"></TextView>
+
+    </LinearLayout>
+ </androidx.cardview.widget.CardView>
+
+  <androidx.cardview.widget.CardView
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_margin="5dp"
+      android:layout_weight="1"
+      app:cardBackgroundColor="@color/white"
+      app:cardCornerRadius="4dp">
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_gravity="center"
+      android:gravity="center"
+      android:orientation="horizontal"
+      android:layout_margin="5dp">
+
+ <TextView
+     android:id="@+id/tv_gallery"
+     android:layout_width="0dp"
+     android:layout_height="wrap_content"
+     android:layout_weight="1"
+     android:drawableTop="@drawable/ic_image_white_24dp"
+     android:gravity="center"
+     android:text="From Gallery"
+     android:textColor="@color/colorPrimary"
+     android:textSize="18dp"></TextView>
+
+    </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+     </LinearLayout>
+
+   </LinearLayout>
+
+   </LinearLayout>
+
+    </LinearLayout>
+
+     <androidx.viewpager.widget.ViewPager
+         android:id="@+id/vp_image"
+         android:layout_width="match_parent"
+         android:layout_height="250dp"
+         android:layout_margin="5dp">
+
+   </androidx.viewpager.widget.ViewPager>
+
+    <Button
+       android:layout_marginTop="5dp"
+       android:id="@+id/upload_ok_btn"
+       android:layout_width="180dp"
+       android:layout_height="wrap_content"
+       android:text="OK"
+       android:textStyle="bold"
+       android:textSize="26dp"
+       android:textColor="@color/white"
+       android:background="@drawable/login_button_back"
+       android:layout_gravity="center"></Button>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/carView_show_noOder_design"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        app:cardCornerRadius="8dp"
+        android:visibility="gone"
+      >
+
+      <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+          android:id="@+id/mbs_noOrder"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="No Order"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp"
+          android:textColor="@color/colorPrimary"
+          />
+   </androidx.cardview.widget.CardView>
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/btn_ok_no_order"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:textColor="@color/white"
+        android:background="@drawable/login_button_back"
+        android:layout_gravity="center"></Button>
+</LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Belle</string>
+    <string name="title_activity_dashboard">Dashboard</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="action_settings">Settings</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="menu_home"><b>Home</b></string>
+    <string name="menu_order_approval"><b>Order Approval</b></string>
+    <string name="menu_slideshow"><b>Slideshow</b></string>
+    <string name="menu_tools"><b>Tools</b></string>
+    <string name="menu_share"><b>Share</b></string>
+    <string name="menu_send"><b>Send</b></string>
+    <string name="menu_activity"><b>Activity</b></string>
+    <string name="create_order">Create Order</string>
+    <string name="ApproveRejectOrder">Approve and Reject</string>
+
+</resources>

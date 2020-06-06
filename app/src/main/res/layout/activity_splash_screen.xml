@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity = "center"
+    android:id="@+id/linear_splash"
+    android:background="@drawable/splash_back_shopping"
+    tools:context=".SplashScreenActivity">
+    <LinearLayout
+        android:id="@+id/tv_welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/company_splash_logo"
+            android:layout_width = "120dp"
+            android:layout_height = "120dp"
+            android:layout_gravity="center"
+            android:src="@drawable/belle"></ImageView>
+<!--        <TextView-->
+<!--            android:id="@+id/tv_company"-->
+<!--            android:layout_marginTop="5dp"-->
+<!--            android:layout_width = "match_parent"-->
+<!--            android:layout_height = "wrap_content"-->
+<!--            android:text= "Welcome To Our Company !"-->
+<!--            android:gravity="center"-->
+<!--            android:textColor="@color/textColor"-->
+<!--            android:textStyle = "bold"-->
+<!--            android:textSize = "20dp"></TextView>-->
+
+        <TextView
+        android:id="@+id/tv_poweredby"
+        android:layout_marginTop="10dp"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:text= "Powered By"
+        android:gravity="center"
+        android:textColor="@color/textColor"
+        android:textSize = "16dp"></TextView>
+        <TextView
+            android:id="@+id/tv_pristine"
+            android:layout_marginTop="10dp"
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:text= "Pristine Business Solution"
+            android:gravity="center"
+            android:textStyle = "bold"
+            android:textColor="@color/textColor"
+            android:textSize = "16dp"></TextView>
+    </LinearLayout>
+
+</LinearLayout>

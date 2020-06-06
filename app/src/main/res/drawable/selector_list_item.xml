@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:exitFadeDuration="@android:integer/config_mediumAnimTime">
+
+    <item android:drawable="@drawable/right_side_drawable_menu_child" android:state_pressed="true"></item>
+    <item android:drawable="@drawable/right_side_drawable_menu_child" android:state_selected="true"></item>
+    <item android:drawable="@drawable/right_side_drawable_menu_child" android:state_activated="true"></item>
+
+
+</selector>

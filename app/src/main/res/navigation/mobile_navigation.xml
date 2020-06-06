@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_activity">
+    <fragment
+        android:id="@+id/nav_activity"
+        android:name="com.e.belle.ui.OrderSaleActivity.ActivityFragment"
+        android:label="@string/menu_activity"
+        tools:layout="@layout/fragment_activity" />
+
+    <fragment
+        android:id="@+id/nav_create_order"
+        android:name="com.e.belle.ui.OrderSaleActivity.CreateOrderFragment"
+        android:label="@string/create_order"
+        tools:layout="@layout/fragment_create_order"/>
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.e.belle.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_order_approval"
+        android:name="com.e.belle.ui.OrderApproval.OderListFragment"
+        android:label="@string/menu_order_approval"
+        tools:layout="@layout/fragment_order_list" />
+
+    <fragment
+        android:id="@+id/nav_approve_reject"
+        android:name="com.e.belle.ui.OrderApproval.ApproveRejectOrder"
+        android:label="@string/ApproveRejectOrder"
+        tools:layout="@layout/fragment_approve_reject_order"></fragment>
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.e.belle.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/nav_tools"
+        android:name="com.e.belle.ui.tools.ToolsFragment"
+        android:label="@string/menu_tools"
+        tools:layout="@layout/fragment_tools" />
+
+    <fragment
+        android:id="@+id/nav_share"
+        android:name="com.e.belle.ui.share.ShareFragment"
+        android:label="@string/menu_share"
+        tools:layout="@layout/fragment_share" />
+
+    <fragment
+        android:id="@+id/nav_send"
+        android:name="com.e.belle.ui.send.SendFragment"
+        android:label="@string/menu_send"
+        tools:layout="@layout/fragment_send" />
+</navigation>
