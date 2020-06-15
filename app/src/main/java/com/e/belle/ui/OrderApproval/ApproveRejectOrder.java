@@ -173,19 +173,21 @@ public class ApproveRejectOrder extends Fragment {
       approve_btn_ok.setOnClickListener(new View.OnClickListener() {
           @Override
           public void onClick(View v) {
-
               try {
-
-                  JSONObject postedJson = new JSONObject();
-                  postedJson.put("order_no", approvalModel.order_no);
-                  postedJson.put("status", "Approved");
-                  postedJson.put("reason","");
-                  postedJson.put("percentage_approval",edit_percnt_approve.getText().toString());
-                  postedJson.put("approve_reject_by", sessionManagement.getUserName());
-                  new HitToServer().executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR, new AsyModel(
-                          AllApiLinks.CancelOkOrder, postedJson, "ApproveOrder"
-                  ));
-                  dialog.dismiss();
+                 if(Integer.parseInt(edit_percnt_approve.getText().toString())<=100 && !edit_percnt_approve.getText().toString().equalsIgnoreCase("")) {
+                     JSONObject postedJson = new JSONObject();
+                     postedJson.put("order_no", approvalModel.order_no);
+                     postedJson.put("status", "Approved");
+                     postedJson.put("reason", "");
+                     postedJson.put("percentage_approval", edit_percnt_approve.getText().toString());
+                     postedJson.put("approve_reject_by", sessionManagement.getUserName());
+                     new HitToServer().executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR, new AsyModel(
+                             AllApiLinks.CancelOkOrder, postedJson, "ApproveOrder"
+                     ));
+                     dialog.dismiss();
+                 }else{
+                     Toast.makeText(getActivity(),"Please Enter percentage approval<=100.",Toast.LENGTH_LONG).show();
+                 }
 
               }catch (Exception e){
 
@@ -240,6 +242,7 @@ public class ApproveRejectOrder extends Fragment {
                       postedJson.put("order_no", approvalModel.order_no);
                       postedJson.put("status", "Rejected");
                       postedJson.put("reason",edt_review.getText().toString());
+                      postedJson.put("percentage_approval",0);
                       postedJson.put("approve_reject_by", sessionManagement.getUserName());
                       new HitToServer().executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR, new AsyModel(
                                 AllApiLinks.CancelOkOrder, postedJson, "ApproveReject"

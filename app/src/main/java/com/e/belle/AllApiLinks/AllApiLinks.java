@@ -2,7 +2,7 @@ package com.e.belle.AllApiLinks;
 
 public class AllApiLinks {
 
-//  public static String globalurl = "https://hcm.pristinefulfil.com";
+  //public static String globalurl = "https://hcm.pristinefulfil.com";
   public static String globalurl = "https://pristinefulfil.com";
   public static String LoginApi = globalurl+"/api/User/UserLogin";
   public static String GetDayMarketList = globalurl +"/api/AppActivity/GetAssignedMarkettosp";

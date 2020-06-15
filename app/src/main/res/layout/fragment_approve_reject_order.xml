@@ -181,7 +181,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="20dp"
                                 android:background="@drawable/login_button_back"
-                                android:text="Approval"
+                                android:text="Approve"
                                 android:textColor="@color/white"
                                 android:textStyle="bold"></Button>
 

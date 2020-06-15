@@ -82,7 +82,7 @@ public class OderListFragment extends Fragment {
         try {
 
             AsyModel objAsy = new AsyModel(AllApiLinks.ApprovalList + sessionManagement.getUserId(), null, "Approval");
-            new HitToServer().executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR, objAsy);
+            new HitToServer().executeOnExecutor(AsyncTask.SERIAL_EXECUTOR, objAsy);
         } catch (Exception e) {
 
         }

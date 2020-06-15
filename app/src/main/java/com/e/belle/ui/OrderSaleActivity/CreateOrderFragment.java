@@ -243,7 +243,8 @@ public class CreateOrderFragment extends Fragment {
                 Bitmap theImage = MediaStore.Images.Media.getBitmap(getActivity().getContentResolver(), imageUri);
                 imagebitmaps.add(theImage);
                 previous_selectimege = "Capture";
-            } else if (requestCode == SELECT_FILE && resultCode == RESULT_OK && null != data) {
+            }
+            else if (requestCode == SELECT_FILE && resultCode == RESULT_OK && null != data) {
                 if (imagebitmaps.size() > 0) {
                     imagebitmaps.clear();
                     file_url.clear();
