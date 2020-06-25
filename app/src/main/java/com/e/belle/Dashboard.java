@@ -17,6 +17,7 @@ import com.e.belle.SessionManagment.SessionManagement;
 import com.e.belle.ui.OrderApproval.OderListFragment;
 import com.e.belle.ui.OrderSaleActivity.ActivityFragment;
 import com.e.belle.ui.upgradeApp.UpgradeAppFragment;
+import com.e.belle.ui.vieworder.ViewOrderFragment;
 import com.google.android.material.snackbar.Snackbar;
 
 import android.view.MenuItem;
@@ -163,6 +164,9 @@ public class Dashboard extends AppCompatActivity {
         break;
       }case "Upgrade app":{
         loadFragment(new UpgradeAppFragment(),"Upgrade app");
+        break;
+      }case "View Order":{
+        loadFragment(new ViewOrderFragment(),"View Order");
         break;
       }
     }

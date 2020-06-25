@@ -17,5 +17,7 @@
     <string name="menu_activity"><b>Activity</b></string>
     <string name="create_order">Create Order</string>
     <string name="ApproveRejectOrder">Approve and Reject</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

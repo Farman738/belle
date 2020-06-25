@@ -3,7 +3,7 @@ package com.e.belle.AllApiLinks;
 public class AllApiLinks {
 
   //public static String globalurl = "https://hcm.pristinefulfil.com";
-  public static String globalurl = "https://pristinefulfil.com";
+  public static String globalurl = "http://103.81.24.116:80";
   public static String LoginApi = globalurl+"/api/User/UserLogin";
   public static String GetDayMarketList = globalurl +"/api/AppActivity/GetAssignedMarkettosp";
   public static String GetArea = globalurl +"/api/AppActivity/GetArea?market_id=";
@@ -16,4 +16,5 @@ public class AllApiLinks {
   public static String CancelOkOrder = globalurl+"/api/AppActivity/ChangeStatusOrder";
 
   public static String versioncodeapiurl = globalurl + "/api/Version/CheckForUpdate?type=BelleySale_App";
+  public static String GetAppOrderDetail = globalurl + "/api/AppActivity/GetAppOrderDetail?salesman_id=";
 }

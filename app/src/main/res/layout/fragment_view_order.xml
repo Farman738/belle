@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/activity_back"
+    tools:context=".ui.vieworder.ViewOrderFragment">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/et_fromDate"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:backgroundTint="#FF7E9D"
+                android:drawableRight="@drawable/ic_date_range_pink_24dp"
+                android:editable="false"
+                android:hint="From Date"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                android:textColorHint="#DADADA"
+                android:textSize="14dp"></EditText>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/et_todate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="To Date"
+                android:maxLines="1"
+                android:editable="false"
+                android:textSize="14dp"
+                android:textColorHint="#DADADA"
+                android:drawableRight="@drawable/ic_date_range_pink_24dp"
+                android:textColor="@color/black"
+                android:backgroundTint ="#FF7E9D"></EditText>
+        </com.google.android.material.textfield.TextInputLayout>
+        <Button
+            android:id="@+id/submit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="Search"
+            android:drawableLeft="@drawable/ic_baseline_search_24"
+            android:textSize="20dp"
+            android:padding="5dp"
+            android:textColor="@color/white"
+            android:background="@drawable/login_button_back"></Button>
+
+        <ListView
+            android:id="@+id/order_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:dividerHeight="1dp"></ListView>
+    </LinearLayout>
+</LinearLayout>

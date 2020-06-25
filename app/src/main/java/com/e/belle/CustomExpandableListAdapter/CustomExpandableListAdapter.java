@@ -78,6 +78,8 @@ public class CustomExpandableListAdapter extends BaseExpandableListAdapter {
             groupImage.setImageDrawable(context.getResources().getDrawable(R.drawable.ic_dashboard_pink_24dp));
         } else if(listTitle.equalsIgnoreCase("App Setting")){
             groupImage.setImageDrawable(context.getResources().getDrawable(R.drawable.ic_keyboard_backspace_pink_32dp));
+        } else if(listTitle.equalsIgnoreCase("Report")){
+            groupImage.setImageDrawable(context.getResources().getDrawable(R.drawable.ic_baseline_report_24));
         }
 
         ImageView list_arrow_up_down = (ImageView) convertView.findViewById(R.id.list_arrow_up_down);
